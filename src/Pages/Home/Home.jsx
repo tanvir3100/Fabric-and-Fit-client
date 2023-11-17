@@ -1,10 +1,12 @@
 import Navbar from "../../Sheared/Navbar/Navbar";
+import Banner from "./Banner";
 
 
 const Home = () => {
     return (
         <div>
-            <Navbar/>
+            <Navbar />
+            <Banner />
         </div>
     );
 };
