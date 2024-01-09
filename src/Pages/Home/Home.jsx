@@ -2,6 +2,7 @@ import Navbar from "../../Sheared/Navbar/Navbar";
 import Banner from "./Banner";
 import Cart from "./Cart";
 import Category from "./Category";
+import TShart from "./TShart";
 
 
 const Home = () => {
@@ -10,7 +11,8 @@ const Home = () => {
             <Navbar />
             <Banner />
             <Cart />
-            <Category/>
+            <Category />
+            <TShart />
         </div>
     );
 };

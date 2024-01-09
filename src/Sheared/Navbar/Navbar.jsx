@@ -8,7 +8,7 @@ const Navbar = () => {
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
-                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 border-none w-52">
+                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[5] p-2 shadow bg-base-100 border-none w-52">
                         <li>
                             <a>T-SHIRT</a>
                             <ul className="flex flex-col justify-center items-center border-none">
@@ -51,7 +51,7 @@ const Navbar = () => {
                         <img alt="Tailwind CSS Navbar component" src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
                     </div>
                 </label>
-                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 opacity-30 w-52">
+                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[5] p-2 shadow bg-base-100 opacity-30 w-52">
                     <li>
                         <a className="justify-between">
                             Profile
