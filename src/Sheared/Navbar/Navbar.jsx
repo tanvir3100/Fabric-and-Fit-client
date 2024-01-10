@@ -27,15 +27,15 @@ const Navbar = () => {
                 <img className="w-20" src="https://i.ibb.co/z4kCDTg/Fabric-black.png" alt="" />
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu menu-horizontal px-1 z-[5]">
                     <li tabIndex={0}>
                         <details>
                             <summary>T-SHIRT</summary>
                             <ul className="flex flex-col justify-center items-center border-none">
-                                <li className="border-b-2 w-full"><a>BRANDED</a></li>
-                                <li className="border-b-2 w-full"><a>TV-Series</a></li>
-                                <li className="border-b-2 w-full"><a>Anime</a></li>
-                                <li className="border-b-2 w-full"><a>Design</a></li>
+                                <li className="w-full"><a>BRANDED</a></li>
+                                <li className="w-full"><a>TV-Series</a></li>
+                                <li className="w-full"><a>Anime</a></li>
+                                <li className="w-full"><a>Design</a></li>
                             </ul>
                         </details>
                     </li>

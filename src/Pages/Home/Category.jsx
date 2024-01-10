@@ -17,6 +17,18 @@ const Category = () => {
                 <div className="">
                     <img src="https://i.ibb.co/RhPKZhG/5-1-247x296.png" alt="" />
                 </div>
+                <div className="">
+                    <img src="https://i.ibb.co/RhPKZhG/5-1-247x296.png" alt="" />
+                </div>
+                <div className="">
+                    <img src="https://i.ibb.co/q5QFXHm/8-247x296.png" alt="" />
+                </div>
+                <div className="">
+                    <img src="https://i.ibb.co/DY5n4P9/7-247x296.png" alt="" />
+                </div>
+                <div className="">
+                    <img src="https://i.ibb.co/m89qwyD/6-1-247x296.png" alt="" />
+                </div>
             </div>
         </div>
     );
