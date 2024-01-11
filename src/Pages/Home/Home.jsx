@@ -13,10 +13,10 @@ const Home = () => {
                 title={'Fabric & Fit | Home'}
             />
             <Navbar />
-            <Banner />
             <Cart />
             <Category />
             <TShart />
+            <Banner />
         </div>
     );
 };

@@ -3,7 +3,7 @@ import useCart from '../../Hooks/useCart'
 const TShart = () => {
     const [tShirts] = useCart();
     return (
-        <div>
+        <div className='px-5 md:px-12 lg:px-32 mx-auto'>
             <div className="divider text-2xl mb-20">T-SHIRT CATEGORIES</div>
             <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5'>
                 {
