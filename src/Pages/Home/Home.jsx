@@ -1,3 +1,4 @@
+import HelmetSection from "../../Helmet/HelmetSection";
 import Navbar from "../../Sheared/Navbar/Navbar";
 import Banner from "./Banner";
 import Cart from "./Cart";
@@ -8,6 +9,9 @@ import TShart from "./TShart";
 const Home = () => {
     return (
         <div>
+            <HelmetSection
+                title={'Fabric & Fit | Home'}
+            />
             <Navbar />
             <Banner />
             <Cart />
