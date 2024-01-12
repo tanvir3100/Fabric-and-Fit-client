@@ -3,7 +3,9 @@ import Navbar from "../../Sheared/Navbar/Navbar";
 import Banner from "./Banner";
 import Cart from "./Cart";
 import Category from "./Category";
+import Customer from "./Customer";
 import Glary from "./Glary";
+import Offer from "./Offer";
 import TShart from "./TShart";
 
 
@@ -18,7 +20,9 @@ const Home = () => {
             <Category />
             <TShart />
             <Banner />
-            <Glary/>
+            <Glary />
+            <Offer />
+            <Customer />
         </div>
     );
 };
