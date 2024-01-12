@@ -5,12 +5,12 @@ const Hero = () => {
         <div>
             <div className="hero min-h-screen" style={{ backgroundImage: 'url(https://i.ibb.co/c1TPFsh/efren-barahona-Gw-Id-Zix-Bnu-Y-unsplash.jpg)' }}>
                 {/* <div className="hero-overlay bg-opacity-40"></div> */}
-                <div className="flex items-start justify-start">
-                    <div className="">
+                <div className="flex items-start justify-start w-4/5">
+                    <div className="w-full">
                         <h1 className="mb-5 text-5xl font-bold text-white">Hello there</h1>
-                        <h1 className="mb-5 text-4xl text-white font-bold">We Are Offering You</h1>
+                        <h1 className="mb-5 text-4xl text-white font-bold">We Are Fabric & Fit</h1>
                         <h1 className='text-amber-300 mt-5 text-4xl font-bold'>
-                            <Typewriter words={['50% OFF On Our', 'Winter Products!']}
+                            <Typewriter words={['Where Fashion', 'Meets Comfort in', 'Every Thread!']}
                                 loop={5}
                                 cursor
                                 cursorStyle='|'
