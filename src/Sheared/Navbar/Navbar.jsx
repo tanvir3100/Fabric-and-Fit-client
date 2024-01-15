@@ -1,5 +1,5 @@
 import Headroom from "react-headroom";
-import Hero from "../../Pages/Home/Hero";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -14,40 +14,42 @@ const Navbar = () => {
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                             </label>
                             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[5] p-2 shadow bg-base-100 border-none w-52">
+                                <li><NavLink to='/'>Home</NavLink></li>
                                 <li>
                                     <a>T-SHIRT</a>
                                     <ul className="flex flex-col justify-center items-center border-none">
-                                        <li className="border-b-2 w-full"><a>BRANDED</a></li>
-                                        <li className="border-b-2 w-full"><a>TV-Series</a></li>
-                                        <li className="border-b-2 w-full"><a>Anime</a></li>
-                                        <li className="border-b-2 w-full"><a>Design</a></li>
+                                        <li className="border-b-2 w-full"><NavLink to='/branded'>BRANDED</NavLink></li>
+                                        <li className="border-b-2 w-full"><NavLink to='/tv'>TV-Series</NavLink></li>
+                                        <li className="border-b-2 w-full"><NavLink to='/anime'>Anime</NavLink></li>
+                                        <li className="border-b-2 w-full"><NavLink to='/design'>Design</NavLink></li>
                                     </ul>
                                 </li>
-                                <li><a>POLO</a></li>
-                                <li><a>SWEATSHART</a></li>
-                                <li><a>CATEGORY</a></li>
-                                <li><a>LOGIN</a></li>
+                                <li><NavLink to='/polo'>POLO</NavLink></li>
+                                <li><NavLink to='/sweatShirt'>SWEATSHART</NavLink></li>
+                                <li><NavLink to='/category'>CATEGORY</NavLink></li>
+                                <li><NavLink to='/login'>LOGIN</NavLink></li>
                             </ul>
                         </div>
                         <img className="w-20" src="https://i.ibb.co/z4kCDTg/Fabric-black.png" alt="" />
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1 z-[5]">
+                            <li><NavLink to='/'>Home</NavLink></li>
                             <li tabIndex={0}>
                                 <details>
                                     <summary>T-SHIRT</summary>
                                     <ul className="flex flex-col justify-center items-center border-none">
-                                        <li className="w-full"><a>BRANDED</a></li>
-                                        <li className="w-full"><a>TV-Series</a></li>
-                                        <li className="w-full"><a>Anime</a></li>
-                                        <li className="w-full"><a>Design</a></li>
+                                        <li className="w-full"><NavLink to='/branded'>BRANDED</NavLink></li>
+                                        <li className="w-full"><NavLink to='/tv'>TV-Series</NavLink></li>
+                                        <li className="w-full"><NavLink to='/anime'>Anime</NavLink></li>
+                                        <li className="w-full"><NavLink to='/design'>Design</NavLink></li>
                                     </ul>
                                 </details>
                             </li>
-                            <li><a>POLO</a></li>
-                            <li><a>SWEATSHART</a></li>
-                            <li><a>CATEGORY</a></li>
-                            <li><a>LOGIN</a></li>
+                            <li><NavLink to='/polo'>POLO</NavLink></li>
+                            <li><NavLink to='/sweatShirt'>SWEATSHART</NavLink></li>
+                            <li><NavLink to='/category'>CATEGORY</NavLink></li>
+                            <li><NavLink to='/login'>LOGIN</NavLink></li>
                         </ul>
                     </div>
                     <div className="dropdown dropdown-end">
@@ -69,9 +71,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </Headroom>
-            <div>
-                <Hero />
-            </div>
         </div>
     );
 };
