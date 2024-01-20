@@ -1,9 +1,11 @@
-import {Outlet} from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
+import Footer from '../Components/Footer';
 
 const MainLayout = () => {
     return (
         <div className=''>
-            <Outlet/>
+            <Outlet />
+            <Footer />
         </div>
     );
 };

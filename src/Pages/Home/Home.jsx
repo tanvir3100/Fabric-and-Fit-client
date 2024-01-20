@@ -3,9 +3,9 @@ import Navbar from "../../Sheared/Navbar/Navbar";
 import Banner from "./Banner";
 import Cart from "./Cart";
 import Category from "./Category";
-import Review from './Review.jsx'
+// import Review from './Review.jsx'
 import Glary from "./Glary";
-import Offer from "./Offer";
+// import Offer from "./Offer";
 import TShart from "./TShart";
 import Hero from './Hero.jsx'
 
@@ -23,8 +23,8 @@ const Home = () => {
             <TShart />
             <Banner />
             <Glary />
-            <Offer />
-            <Review />
+            {/* <Offer />
+            <Review /> */}
         </div>
     );
 };
