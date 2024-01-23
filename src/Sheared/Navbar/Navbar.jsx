@@ -1,5 +1,7 @@
 import Headroom from "react-headroom";
 import { NavLink } from "react-router-dom";
+import { FiShoppingCart } from "react-icons/fi";
+
 
 
 
@@ -7,7 +9,7 @@ const Navbar = () => {
     return (
         <div>
             <Headroom>
-                <div className="navbar z-50 flex justify-between bg-base-100">
+                <div className="navbar z-50 flex bg-base-100">
                     <div className="navbar-start">
                         <div className="dropdown">
                             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -52,7 +54,7 @@ const Navbar = () => {
                             <li><NavLink to='/login'>LOGIN</NavLink></li>
                         </ul>
                     </div>
-                    <div className="dropdown dropdown-end">
+                    {/* <div className="dropdown dropdown-end">
                         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full">
                                 <img alt="Tailwind CSS Navbar component" src="https://i.ibb.co/MBFBvV1/blank-profile-picture-973460-1920.png" />
@@ -68,10 +70,28 @@ const Navbar = () => {
                             <li><a>Settings</a></li>
                             <li><a>Logout</a></li>
                         </ul>
-                    </div>
-                </div>
-            </Headroom>
-        </div>
+                    </div> */}
+                    <div className="drawer drawer-end w-8">
+                        <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
+                        <div className="drawer-content">
+                            {/* Page content here */}
+                            {/* <label htmlFor="my-drawer-4" className="drawer-button btn btn-primary">Open drawer</label> */}
+                            <label htmlFor="my-drawer-4" className="btn btn-ghost btn-circle avatar">
+                                <FiShoppingCart />
+                            </label>
+                        </div>
+                        <div className="drawer-side z-50">
+                            <label htmlFor="my-drawer-4" aria-label="close sidebar" className="drawer-overlay"></label>
+                            <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+                                {/* Sidebar content here */}
+                                <li><a>Sidebar Item 1</a></li>
+                                <li><a>Sidebar Item 2</a></li>
+                            </ul>
+                        </div>
+                    </div >
+                </div >
+            </Headroom >
+        </div >
     );
 };
 
