@@ -14,11 +14,7 @@ const TShart = () => {
                             <h2 className="text-xl">{tShirt.name}</h2>
                             <p>{tShirt.price}</p>
                         </div>
-                        <div className='bg-none absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity w-full h-10 md:top-[72.5%] lg:top-[68.5%]'>
-                            {/* <button className='w-full bg-cyan-600'>
-                                    <p className='text-white btn rounded-none w-full bg-cyan-600 hover:bg-cyan-600 border-none'>Quick View</p>
-                                </button> */}
-                            {/* You can open the modal using document.getElementById('ID').showModal() method */}
+                        <div className='bg-none absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity w-full h-10 top-[58%] md:top-[60%] lg:top-[68%]'>
                             <button
                                 className="w-full bg-cyan-600"
                                 onClick={() => document.getElementById('my_modal_3').showModal()}>
@@ -39,8 +35,8 @@ const TShart = () => {
                                                 <h1 className="text-2xl font-bold">{tShirt.name}</h1>
                                                 <p className="py-6">Shot description:{tShirt.description}</p>
                                                 <div className="dropdown dropdown-top dropdown-end">
-                                                    <div tabIndex={0} role="button" className="btn m-1">Sizes</div>
-                                                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                                    <div tabIndex={0} role="button" className="btn rounded-none">Sizes</div>
+                                                    <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-none w-52">
                                                         <li>{tShirt.sizes}</li>
                                                     </ul>
                                                 </div>

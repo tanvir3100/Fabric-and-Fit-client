@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Navigation } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -7,8 +7,7 @@ import 'swiper/css/navigation';
 
 const Banner = () => {
     return (
-        <div>
-            <div className="divider text-2xl my-10 px-5 md:px-12 lg:px-32 mx-auto">Our Best Sell</div>
+        <div className='mt-5 lg:mt-10'>
             <div className='z-[-30]'>
                 <Swiper
                     spaceBetween={30}
@@ -17,8 +16,7 @@ const Banner = () => {
                         delay: 2500,
                         disableOnInteraction: false,
                     }}
-                    navigation={true}
-                    modules={[Autoplay, Navigation]}
+                    modules={[Autoplay]}
                     className="mySwiper"
                 >
                     <SwiperSlide><div className='h-full lg:h-[80vh]'><img src="https://i.ibb.co/GRvD1kz/blouse-2597205.jpg" alt="" /></div></SwiperSlide>

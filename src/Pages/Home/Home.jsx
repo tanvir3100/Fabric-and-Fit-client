@@ -24,8 +24,6 @@ const Home = () => {
             <TShart />
             <Banner />
             <Glary />
-            {/* <Offer />
-            <Review /> */}
             <Collections />
         </div>
     );

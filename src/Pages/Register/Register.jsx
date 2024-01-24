@@ -1,6 +1,8 @@
 import { useForm } from "react-hook-form";
 import Navbar from "../../Sheared/Navbar/Navbar";
 import { Link } from "react-router-dom";
+import Lottie from "lottie-react";
+import animationData from '../../../public/Animation - 1706105377269.json'
 
 
 const Register = () => {
@@ -15,9 +17,11 @@ const Register = () => {
             <Navbar />
             <div className="hero h-[80vh]">
                 <div className="hero-content flex-col lg:flex-row-reverse h-full">
-                    <div className="text-center lg:text-left flex-1">
-                        <h1 className="text-5xl font-bold">Register Now!</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <div className="text-center lg:text-left lg:flex-1">
+                        <h1 className="text-5xl font-bold text-center">Login now!</h1>
+                        <div className="flex justify-center items-center">
+                            <Lottie className="w-5/6 lg:w-3/4 text-center" animationData={animationData} />
+                        </div>
                     </div>
                     <div className="lg:flex-1">
                         <div className="card shrink-0 shadow-2xl bg-base-100 lg:w-3/4 lg:h-4/5 rounded-none">

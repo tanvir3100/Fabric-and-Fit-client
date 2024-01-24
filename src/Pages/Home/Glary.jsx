@@ -6,7 +6,7 @@ const Glary = () => {
             <div>
                 <div className="divider text-2xl my-10">Photo Glary</div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 lg:gap-5">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-3 lg:gap-5">
                 <Fade direction="left">
                     <div className="h-full w-full">
                         <img className="h-full w-full" src="https://i.ibb.co/ZB8vJ26/chris-murray-YGz-EX5y-LKe-A-unsplash.jpg" alt="" />
