@@ -77,7 +77,7 @@ const Navbar = () => {
                             {/* Page content here */}
                             {/* <label htmlFor="my-drawer-4" className="drawer-button btn btn-primary">Open drawer</label> */}
                             <label htmlFor="my-drawer-4" className="btn btn-ghost btn-circle avatar">
-                                <FiShoppingCart />
+                                <FiShoppingCart className="text-xl" />
                             </label>
                         </div>
                         <div className="drawer-side z-50">

@@ -8,6 +8,7 @@ import Glary from "./Glary";
 // import Offer from "./Offer";
 import TShart from "./TShart";
 import Hero from './Hero.jsx'
+import Collections from "./Collections.jsx";
 
 
 const Home = () => {
@@ -17,7 +18,7 @@ const Home = () => {
                 title={'Fabric & Fit | Home'}
             />
             <Navbar />
-            <Hero/>
+            <Hero />
             <Cart />
             <Category />
             <TShart />
@@ -25,6 +26,7 @@ const Home = () => {
             <Glary />
             {/* <Offer />
             <Review /> */}
+            <Collections />
         </div>
     );
 };
