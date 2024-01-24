@@ -18,7 +18,7 @@ const Register = () => {
             <div className="hero h-[80vh]">
                 <div className="hero-content flex-col lg:flex-row-reverse h-full">
                     <div className="text-center lg:text-left lg:flex-1">
-                        <h1 className="text-5xl font-bold text-center">Login now!</h1>
+                        <h1 className="text-5xl font-bold text-center">Register now!</h1>
                         <div className="flex justify-center items-center">
                             <Lottie className="w-5/6 lg:w-3/4 text-center" animationData={animationData} />
                         </div>
@@ -30,16 +30,16 @@ const Register = () => {
                                     <label className="label">
                                         <span className="label-text">Email</span>
                                     </label>
-                                    <input type="email" {...register("email")} placeholder="email" className="input input-bordered" required />
+                                    <input type="email" {...register("email")} placeholder="email" className="input input-bordered rounded-none" required />
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text">Password</span>
                                     </label>
-                                    <input type="password" {...register("password")} placeholder="password" className="input input-bordered" required />
+                                    <input type="password" {...register("password")} placeholder="password" className="input input-bordered rounded-none" required />
                                 </div>
                                 <div className="form-control mt-6">
-                                    <button className="btn btn-primary">Login</button>
+                                    <button className="btn rounded-none bg-gradient-to-r from-cyan-500 to-blue-500">Login</button>
                                 </div>
                             </form>
                             <p className="text-center pb-3">If Register ? <Link to='/login'><span className="text-green-600 hover:underline">Login</span></Link>.</p>
