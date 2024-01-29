@@ -1,10 +1,13 @@
-import { useForm } from "react-hook-form";
-import Navbar from "../../Sheared/Navbar/Navbar";
-import { Link, useLocation, useNavigate } from "react-router-dom";
 import Lottie from "lottie-react";
-import animationData from '../../../public/Animation - 1706105377269.json'
 import { useContext } from "react";
+import { useForm } from "react-hook-form";
+import { FcGoogle } from "react-icons/fc";
+import Navbar from "../../Sheared/Navbar/Navbar";
 import { AuthContext } from '../../Provider/AuthProvider'
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import animationData from '../../../public/Animation - 1706105377269.json'
+
+import Swal from "sweetalert2";
 
 
 const Login = () => {
@@ -19,18 +22,31 @@ const Login = () => {
 
     const { register, handleSubmit } = useForm();
     const onSubmit = (data) => {
-        signInUser(data.email, data.password)
-        .then(result => {
-            const user = result.user;
-            console.log(user);
-
-            navigate(from, {replace: true});
-        })
-        .then(error => {
-            console.log(error)
-        })
+        console.log(data)
+        // signInUser(data.email, data.password)
+        //     .then(result => {
+        //         const user = result.user;
+        //         console.log(user);
+        //         Swal.fire('Login Successful')
+        //         navigate(from, { replace: true });
+        //     })
+        //     .then(error => {
+        //         console.log(error)
+        //     })
     }
 
+    const googleLogin = (data) => {
+        signInUser(data.email, data.password)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                Swal.fire('Login Successful')
+                navigate(from, { replace: true });
+            })
+            .then(error => {
+                console.log(error)
+            })
+    }
 
 
     return (
@@ -51,16 +67,19 @@ const Login = () => {
                                     <label className="label">
                                         <span className="label-text">Email</span>
                                     </label>
-                                    <input type="email" {...register("email")} placeholder="email" className="input input-bordered" required />
+                                    <input type="email" {...register("email")} placeholder="email" className="input input-bordered rounded-none" required />
                                 </div>
                                 <div className="form-control">
                                     <label className="label">
                                         <span className="label-text">Password</span>
                                     </label>
-                                    <input type="password" {...register("password")} placeholder="password" className="input input-bordered" required />
+                                    <input type="password" {...register("password")} placeholder="password" className="input input-bordered rounded-none" required />
                                 </div>
                                 <div className="form-control mt-6">
-                                    <button className="btn btn-primary">Login</button>
+                                    <button type="submit" className="btn btn-primary rounded-none">Login</button>
+                                </div>
+                                <div className="mt-6">
+                                    <button onClick={googleLogin} className="btn rounded-none border border-black"><FcGoogle className="text-xl" /> Google Login</button>
                                 </div>
                             </form>
                             <p className="text-center pb-3">If Not Register ? <Link to='/register'><span className="text-red-600 hover:underline">Register</span></Link> Now.</p>
