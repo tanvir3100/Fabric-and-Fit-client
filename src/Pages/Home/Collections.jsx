@@ -3,7 +3,6 @@ import useCart from "../../Hooks/useCart";
 const Collections = () => {
 
     const [tShirts] = useCart();
-    console.log(tShirts)
 
     return (
         <div className="bg-base-200 py-10 w-full px-2 lg:px-0 mx-auto">

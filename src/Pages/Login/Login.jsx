@@ -1,16 +1,37 @@
 import { useForm } from "react-hook-form";
 import Navbar from "../../Sheared/Navbar/Navbar";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Lottie from "lottie-react";
 import animationData from '../../../public/Animation - 1706105377269.json'
+import { useContext } from "react";
+import { AuthContext } from '../../Provider/AuthProvider'
 
 
 const Login = () => {
 
+    const { signInUser } = useContext(AuthContext);
+    const navigate = useNavigate()
+    const location = useLocation()
+
+
+    const from = location.state?.from?.pathname || '/';
+    console.log('location form state', location.state)
+
     const { register, handleSubmit } = useForm();
     const onSubmit = (data) => {
-        console.log(data)
+        signInUser(data.email, data.password)
+        .then(result => {
+            const user = result.user;
+            console.log(user);
+
+            navigate(from, {replace: true});
+        })
+        .then(error => {
+            console.log(error)
+        })
     }
+
+
 
     return (
         <div>
