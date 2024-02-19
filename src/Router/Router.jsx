@@ -37,6 +37,10 @@ const router = createBrowserRouter([
                 path: '/sweatShirt',
                 element: <SweatShirt />
             },
+            {
+                path: '/tShirt',
+                element: <SweatShirt />
+            },
         ]
     },
 ]);

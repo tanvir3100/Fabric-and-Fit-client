@@ -10,6 +10,7 @@ import useCart from "../../Hooks/useCart";
 const Navbar = () => {
 
     const [tShirts] = useCart();
+    console.log(tShirts)
     return (
         <div>
             <Headroom>
@@ -21,15 +22,7 @@ const Navbar = () => {
                             </label>
                             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[5] p-2 shadow bg-base-100 border-none w-52">
                                 <li><NavLink to='/'>Home</NavLink></li>
-                                <li>
-                                    <a>T-SHIRT</a>
-                                    <ul className="flex flex-col justify-center items-center border-none">
-                                        <li className="border-b-2 w-full"><NavLink to='/branded'>BRANDED</NavLink></li>
-                                        <li className="border-b-2 w-full"><NavLink to='/tv'>TV-Series</NavLink></li>
-                                        <li className="border-b-2 w-full"><NavLink to='/anime'>Anime</NavLink></li>
-                                        <li className="border-b-2 w-full"><NavLink to='/design'>Design</NavLink></li>
-                                    </ul>
-                                </li>
+                                <li><NavLink to='/tShirt'>T-SHIRT</NavLink></li>
                                 <li><NavLink to='/polo'>POLO</NavLink></li>
                                 <li><NavLink to='/sweatShirt'>SWEATSHART</NavLink></li>
                                 <li><NavLink to='/category'>CATEGORY</NavLink></li>
@@ -41,17 +34,7 @@ const Navbar = () => {
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1 z-[5]">
                             <li><NavLink to='/'>Home</NavLink></li>
-                            <li tabIndex={0}>
-                                <details>
-                                    <summary>T-SHIRT</summary>
-                                    <ul className="flex flex-col justify-center items-center border-none">
-                                        <li className="w-full"><NavLink to='/branded'>BRANDED</NavLink></li>
-                                        <li className="w-full"><NavLink to='/tv'>TV-Series</NavLink></li>
-                                        <li className="w-full"><NavLink to='/anime'>Anime</NavLink></li>
-                                        <li className="w-full"><NavLink to='/design'>Design</NavLink></li>
-                                    </ul>
-                                </details>
-                            </li>
+                            <li><NavLink to='/tShirt'>T-SHIRT</NavLink></li>
                             <li><NavLink to='/polo'>POLO</NavLink></li>
                             <li><NavLink to='/sweatShirt'>SWEATSHART</NavLink></li>
                             <li><NavLink to='/category'>CATEGORY</NavLink></li>
@@ -62,7 +45,6 @@ const Navbar = () => {
                         <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
                         <div className="drawer-content p-2">
                             {/* Page content here */}
-                            {/* <label htmlFor="my-drawer-4" className="drawer-button btn btn-primary">Open drawer</label> */}
                             <label htmlFor="my-drawer-4" className="btn btn-ghost avatar">
                                 <div className="flex items-center justify-center">
                                     <div>
